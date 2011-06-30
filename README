@@ -1,0 +1,4 @@
+py_xdotool is a Python wrapper for the xdotool utility:
+http://www.semicomplete.com/projects/xdotool/
+
+Only a very small subset of the functions are supported. Feel free to add any others!
