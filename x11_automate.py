@@ -101,9 +101,13 @@ def click(btn):
     c = "click %d" % btn
     return run_command(c)
 
-def click_at(x, y, btn):
+def click_at(x, y, btn=1):
     mouse_move(x, y)
     return click(btn)
     
 def run_command(c):
-    return Popen("xdotool " + c, stdout=PIPE, shell=True).stdout.read()
+    return run_command_raw("xdotool " + c)
+    
+def run_command_raw(c):
+    return Popen(c, stdout=PIPE, shell=True).stdout.read()
+    
