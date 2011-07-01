@@ -1,4 +1,4 @@
-from py_xdotool import *
+from x11_automate import *
 from time import sleep
 
 active = get_active_window()
