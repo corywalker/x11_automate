@@ -96,6 +96,14 @@ def search(**kwargs):
 def mouse_move(x, y):
     c = "mousemove %d %d" % (x, y)
     return run_command(c)
+
+def type_string(string):
+    c = "type '%s'" % string
+    return run_command(c)
+
+def key(keyname):
+    c = "key %s" % keyname
+    return run_command(c)
     
 def click(btn):
     c = "click %d" % btn
